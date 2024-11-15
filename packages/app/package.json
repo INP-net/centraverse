@@ -115,7 +115,8 @@
     "vite-plugin-kit-routes": "^0.6.11",
     "wait-port": "^1.1.0",
     "ws": "^8.18.0",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.23.5"
   },
   "scripts": {
     "generate": "node src/scripts/generate-dotenv-service-worker.js && tsx src/scripts/generate-reserved-usernames-from-routes.ts && svelte-kit sync && yarn zeus && houdini generate",

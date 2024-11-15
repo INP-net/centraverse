@@ -53,6 +53,7 @@ export async function startApiServer() {
   }
   import('./gdpr.js');
   import('./log.js');
+  import('./wellknown.js');
   import('./booking-pdf.js');
   import('./handover-pdf.js');
   import('./storage.js');

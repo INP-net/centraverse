@@ -1236,6 +1236,7 @@ __metadata:
     ws: "npm:^8.18.0"
     xss: "npm:^1.0.15"
     zod: "npm:^3.23.8"
+    zod-to-json-schema: "npm:^3.23.5"
   languageName: unknown
   linkType: soft
 
@@ -25149,6 +25150,15 @@ __metadata:
   peerDependencies:
     zod: ^3.23.3
   checksum: 10c0/bbea65f28dd009e25940c038c73ad3a9bd5aeffd1a217dba7c44e59f3a3fe0476da3f65bbdde9bf4e65009557489e5b625420d9739871ea0c14e80c99968bf41
+  languageName: node
+  linkType: hard
+
+"zod-to-json-schema@npm:^3.23.5":
+  version: 3.23.5
+  resolution: "zod-to-json-schema@npm:3.23.5"
+  peerDependencies:
+    zod: ^3.23.3
+  checksum: 10c0/bf50455f446c96b9a161476347ebab6e3bcae7fdf1376ce0b74248e79db733590164476dac2fc481a921868f705fefdcafd223a98203a700b3f01ba1cda6aa90
   languageName: node
   linkType: hard
 
