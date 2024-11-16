@@ -4477,6 +4477,10 @@ type Query @rateLimit(limit: 1200, duration: 60) {
     last: Int
   ): QueryUserCandidatesConnection!
   userServices: [Service!]! @deprecated(reason: "Use `services(mine: true)` instead")
+  """
+  Version actuelle de l'API
+  """
+  version: String!
 }
 
 type QueryAllFormsConnection {

@@ -12,7 +12,7 @@
   import SubmenuItem from '$lib/components/SubmenuItem.svelte';
   import { formatDateTime } from '$lib/dates';
   import { debugging } from '$lib/debugging';
-  import { loading } from '$lib/loading';
+  import { loading, mapAllLoading } from '$lib/loading';
   import { mutateAndToast } from '$lib/mutations';
   import { refroute } from '$lib/navigation';
   import { route } from '$lib/ROUTES';
@@ -54,7 +54,7 @@
   // HINT: Don't forget to add an entry in packages/app/src/lib/navigation.ts for the top navbar's title and/or action buttons
 </script>
 
-<MaybeError result={$LayoutSettings} let:data={{ me }}>
+<MaybeError result={$LayoutSettings} let:data={{ me, apiVersion }}>
   <div class="contents">
     <Submenu>
       <SubmenuItem icon={IconProfile} href={route('/users/[uid]/edit', loading(me.uid, ''))}>
@@ -120,9 +120,10 @@
         icon={IconServerConfig}
         clickable
         chevron
-        subtext={serverManifest
-          ? `Churros API v${serverManifest.version} à ${new URL(serverManifest.urls.api).host}`
-          : PendingValue}
+        subtext={mapAllLoading(
+          [serverManifest ?? PendingValue, apiVersion],
+          (manifest, version) => `Churros API v${version} à ${new URL(manifest.urls.api).host}`,
+        )}
       >
         Choix du serveur
       </SubmenuItem>
