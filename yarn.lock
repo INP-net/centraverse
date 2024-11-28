@@ -1009,7 +1009,7 @@ __metadata:
     "@types/lodash.range": "npm:^3.2.9"
     "@types/mjml": "npm:^4.7.4"
     "@types/multer": "npm:^1.4.12"
-    "@types/node": "npm:^20.16.10"
+    "@types/node": "npm:^20.17.9"
     "@types/nodemailer": "npm:^6.4.17"
     "@types/passport": "npm:^1.0.17"
     "@types/passport-anonymous": "npm:^1.0.5"
@@ -6232,12 +6232,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.16.10":
-  version: 20.16.10
-  resolution: "@types/node@npm:20.16.10"
+"@types/node@npm:^20.17.9":
+  version: 20.17.9
+  resolution: "@types/node@npm:20.17.9"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10c0/c0c0c7ecb083ec638c2118e54b5242bb4c39a75608cbac9475cf15aaceb64b8bc997a87a0798e700a81d61651c8a7750ae0455be0f0996ada6e8b2bb818d90c5
+  checksum: 10c0/1c37c3618407d56b76301578edabcb4c6a7ef093d0811c50fc4df8df68fc546797a294cafac0e50789f4e0e485cd1d6871964d8e6222fd420658bdae89c1fb4a
   languageName: node
   linkType: hard
 
@@ -7200,7 +7200,7 @@ __metadata:
   resolution: "arborist@workspace:packages/arborist"
   dependencies:
     "@tsconfig/node20": "npm:^20.1.4"
-    "@types/node": "npm:^20.16.10"
+    "@types/node": "npm:^20.17.9"
     c8: "npm:^10.1.2"
     npm-upgrade: "npm:^3.1.0"
     ts-node: "npm:^10.9.2"
