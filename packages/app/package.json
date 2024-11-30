@@ -7,7 +7,7 @@
     "@iconify-json/logos": "^1.2.3",
     "@paypal/paypal-js": "^8.1.2",
     "@sentry/sveltekit": "^8.41.0",
-    "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@sveltejs/vite-plugin-svelte": "^5.0.1",
     "@swc/core": "^1.9.2",
     "@swc/wasm": "^1.9.2",
     "@zxcvbn-ts/core": "^3.0.4",

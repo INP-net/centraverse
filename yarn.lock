@@ -880,7 +880,7 @@ __metadata:
     "@sentry/sveltekit": "npm:^8.41.0"
     "@sveltejs/adapter-node": "npm:^5.2.9"
     "@sveltejs/kit": "npm:^2.9.0"
-    "@sveltejs/vite-plugin-svelte": "npm:^3.1.2"
+    "@sveltejs/vite-plugin-svelte": "npm:^5.0.1"
     "@swc/core": "npm:^1.9.2"
     "@swc/wasm": "npm:^1.9.2"
     "@types/blob-stream": "npm:^0.1.33"
@@ -4740,7 +4740,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sveltejs/vite-plugin-svelte@npm:^3.0.2, @sveltejs/vite-plugin-svelte@npm:^3.1.2":
+"@sveltejs/vite-plugin-svelte-inspector@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "@sveltejs/vite-plugin-svelte-inspector@npm:4.0.1"
+  dependencies:
+    debug: "npm:^4.3.7"
+  peerDependencies:
+    "@sveltejs/vite-plugin-svelte": ^5.0.0
+    svelte: ^5.0.0
+    vite: ^6.0.0
+  checksum: 10c0/03cc334346fcf291d3d0cba435bf752d15df91c0ac55dccdb5bf1372ae5a85fcb25f0f63ca3d1f7a25ebaa9e711fd1178d8a1fd6f495d57ac2eb327b855c0aea
+  languageName: node
+  linkType: hard
+
+"@sveltejs/vite-plugin-svelte@npm:^3.0.2":
   version: 3.1.2
   resolution: "@sveltejs/vite-plugin-svelte@npm:3.1.2"
   dependencies:
@@ -4755,6 +4768,23 @@ __metadata:
     svelte: ^4.0.0 || ^5.0.0-next.0
     vite: ^5.0.0
   checksum: 10c0/b15a82fc41ddd7983d7e130bedfc1c292c8a183677b78c5edd683d2f2df6cd2b1316e19958ab8c888031ca5941058f4475a16950ff1428ac7989c0b679987b36
+  languageName: node
+  linkType: hard
+
+"@sveltejs/vite-plugin-svelte@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "@sveltejs/vite-plugin-svelte@npm:5.0.1"
+  dependencies:
+    "@sveltejs/vite-plugin-svelte-inspector": "npm:^4.0.0"
+    debug: "npm:^4.3.7"
+    deepmerge: "npm:^4.3.1"
+    kleur: "npm:^4.1.5"
+    magic-string: "npm:^0.30.13"
+    vitefu: "npm:^1.0.3"
+  peerDependencies:
+    svelte: ^5.0.0
+    vite: ^6.0.0
+  checksum: 10c0/bc0ea707b3f37d05ca953d6be9b75ea651609d73289e7a51f714102c29741825d47eb78c573ccc2766db90794570f432423f0bf8e7e9f755853443ecb8188345
   languageName: node
   linkType: hard
 
@@ -14709,6 +14739,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"magic-string@npm:^0.30.13":
+  version: 0.30.14
+  resolution: "magic-string@npm:0.30.14"
+  dependencies:
+    "@jridgewell/sourcemap-codec": "npm:^1.5.0"
+  checksum: 10c0/c52c2a6e699dfa8a840e13154da35464a40cd8b07049b695a8b282883b0426c0811af1e36ac26860b4267289340b42772c156a5608e87be97b63d510e617e87a
+  languageName: node
+  linkType: hard
+
 "magicast@npm:0.2.8":
   version: 0.2.8
   resolution: "magicast@npm:0.2.8"
@@ -22322,6 +22361,18 @@ __metadata:
     vite:
       optional: true
   checksum: 10c0/5781ece3025b6be0eb87ee7d97760a7721b1c6c5ad60ede5f37c86393ece3c8fce4245472f62368eb192448034086e25bdcadf098eefc271277176ab9a430204
+  languageName: node
+  linkType: hard
+
+"vitefu@npm:^1.0.3":
+  version: 1.0.4
+  resolution: "vitefu@npm:1.0.4"
+  peerDependencies:
+    vite: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0
+  peerDependenciesMeta:
+    vite:
+      optional: true
+  checksum: 10c0/d7356312c76fdfa78d6a8880f2abbcb375cf67d034b6e79436c954974cf3059b1bed737245cdc3df6a68835d577b55c27b358bc2a693bfcb96f7bb19467bd28d
   languageName: node
   linkType: hard
 
