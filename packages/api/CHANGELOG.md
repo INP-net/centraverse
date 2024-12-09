@@ -1,5 +1,18 @@
 # @churros/api
 
+## 8.0.0
+
+### Major Changes
+
+- a451d73: remove Query.issuesByUser, Query.codeContributors, Query.issue and types related to gitlab issues
+- 50ffbd7: drop type Comment, interface Commentable, fields .comments, .comment and .commentId where they exist, Mutation.{upsert,delete}Comment and remove commentId argument from fields that take it
+
+### Patch Changes
+
+- Updated dependencies [5b6b6ba]
+- Updated dependencies [50ffbd7]
+  - @churros/db@4.0.0
+
 ## 7.0.0
 
 ### Major Changes
